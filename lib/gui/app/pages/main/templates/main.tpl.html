@@ -114,7 +114,7 @@
         <progress-button class="button-brick"
           tabindex="3"
           percentage="main.state.getFlashState().percentage"
-          striped="{{ main.state.getFlashState().type == 'check' }}"
+          striped="{{ main.state.getFlashState().type == 'verifying' }}"
           ng-attr-active="{{ main.state.isFlashing() }}"
           ng-click="flash.flashImageToDrive(main.selection.getImage(), main.selection.getSelectedDevices())"
           ng-disabled="main.shouldFlashStepBeDisabled() || main.state.getLastFlashErrorCode()">
