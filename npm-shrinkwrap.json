@@ -3654,8 +3654,8 @@
       "dev": true
     },
     "ext2fs": {
-      "version": "1.0.12",
-      "resolved": "https://registry.npmjs.org/ext2fs/-/ext2fs-1.0.12.tgz",
+      "version": "1.0.13",
+      "resolved": "https://registry.npmjs.org/ext2fs/-/ext2fs-1.0.13.tgz",
       "dependencies": {
         "async": {
           "version": "2.6.1",
