@@ -4829,6 +4829,15 @@
       "resolved": "https://registry.npmjs.org/jodid25519/-/jodid25519-1.0.2.tgz",
       "optional": true
     },
+    "jquery": {
+      "version": "3.3.1",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.3.1.tgz"
+    },
+    "jquery-ui": {
+      "version": "1.12.1",
+      "resolved": "https://registry.npmjs.org/jquery-ui/-/jquery-ui-1.12.1.tgz",
+      "optional": true
+    },
     "js-base64": {
       "version": "2.4.3",
       "resolved": "https://registry.npmjs.org/js-base64/-/js-base64-2.4.3.tgz",
@@ -7062,6 +7071,28 @@
         }
       }
     },
+    "react-virtual-keyboard": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/react-virtual-keyboard/-/react-virtual-keyboard-1.0.2.tgz",
+      "dependencies": {
+        "js-tokens": {
+          "version": "4.0.0",
+          "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
+        },
+        "loose-envify": {
+          "version": "1.4.0",
+          "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
+        },
+        "object-assign": {
+          "version": "4.1.1",
+          "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
+        },
+        "prop-types": {
+          "version": "15.6.2",
+          "resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz"
+        }
+      }
+    },
     "react2angular": {
       "version": "4.0.2",
       "resolved": "https://registry.npmjs.org/react2angular/-/react2angular-4.0.2.tgz"
@@ -9063,6 +9094,10 @@
       "version": "1.2.0",
       "resolved": "https://registry.npmjs.org/vinyl/-/vinyl-1.2.0.tgz",
       "dev": true
+    },
+    "virtual-keyboard": {
+      "version": "1.28.4",
+      "resolved": "https://registry.npmjs.org/virtual-keyboard/-/virtual-keyboard-1.28.4.tgz"
     },
     "vm-browserify": {
       "version": "0.0.4",

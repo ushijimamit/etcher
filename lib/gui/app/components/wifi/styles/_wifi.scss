@@ -18,3 +18,20 @@ div.modal-wifi-modal {
   width: initial;
   max-width: initial;
 }
+
+.wifi-modal-main,
+.wifi-networks-list {
+  height: 80%;
+}
+.wifi-networks-list {
+  overflow-y: scroll;
+}
+
+.wifi-error-alert-container {
+  position: absolute;
+  left: 50%;
+}
+.wifi-error-alert {
+  position: relative;
+  left: -50%;
+}

@@ -18,7 +18,7 @@
 
 const Types = require('prop-types')
 const React = require('react')
-const Keyboard = require('react-virtual-keyboard')
+const Keyboard = require('react-virtual-keyboard').default
 
 class KBInput extends React.PureComponent {
   componentDidMount () {
@@ -28,8 +28,6 @@ class KBInput extends React.PureComponent {
   }
 
   render () {
-    console.log('value', this.props.value, typeof this.props.value)
-    console.log('type', this.props.type, typeof this.props.type)
     return (<Keyboard
       value={this.props.value || ''}
       type={this.props.type || 'text'}
