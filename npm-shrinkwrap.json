@@ -773,7 +773,7 @@
     "etcher-sdk": {
       "version": "0.0.1",
       "from": "resin-io-modules/etcher-sdk#master",
-      "resolved": "git://github.com/resin-io-modules/etcher-sdk.git#4af1756a3d005782d09e38529ce463f7f61cefe1",
+      "resolved": "git://github.com/resin-io-modules/etcher-sdk.git#3323892b734f420dd4ad4853e941daf3f5d0b8cc",
       "dependencies": {
         "@types/node": {
           "version": "6.0.116",
