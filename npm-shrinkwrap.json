@@ -63,8 +63,8 @@
       "resolved": "https://registry.npmjs.org/@types/lodash.memoize/-/lodash.memoize-4.1.4.tgz"
     },
     "@types/node": {
-      "version": "10.7.1",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.7.1.tgz"
+      "version": "10.9.3",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.9.3.tgz"
     },
     "@types/prop-types": {
       "version": "15.5.5",
@@ -99,8 +99,8 @@
       "resolved": "https://registry.npmjs.org/@types/semver/-/semver-5.5.0.tgz"
     },
     "@types/uuid": {
-      "version": "3.4.3",
-      "resolved": "https://registry.npmjs.org/@types/uuid/-/uuid-3.4.3.tgz"
+      "version": "3.4.4",
+      "resolved": "https://registry.npmjs.org/@types/uuid/-/uuid-3.4.4.tgz"
     },
     "@types/yauzl": {
       "version": "2.9.0",
@@ -640,8 +640,8 @@
       "dev": true
     },
     "aws-sdk": {
-      "version": "2.304.0",
-      "resolved": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.304.0.tgz",
+      "version": "2.305.0",
+      "resolved": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.305.0.tgz",
       "dependencies": {
         "uuid": {
           "version": "3.1.0",
@@ -1505,8 +1505,8 @@
       "resolved": "https://registry.npmjs.org/camelcase-keys/-/camelcase-keys-2.1.0.tgz"
     },
     "caniuse-lite": {
-      "version": "1.0.30000882",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000882.tgz",
+      "version": "1.0.30000883",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000883.tgz",
       "dev": true
     },
     "capture-stack-trace": {
@@ -1769,12 +1769,8 @@
       "resolved": "https://registry.npmjs.org/color/-/color-2.0.1.tgz",
       "dependencies": {
         "color-convert": {
-          "version": "1.9.2",
-          "resolved": "https://registry.npmjs.org/color-convert/-/color-convert-1.9.2.tgz"
-        },
-        "color-name": {
-          "version": "1.1.1",
-          "resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.1.tgz"
+          "version": "1.9.3",
+          "resolved": "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz"
         }
       }
     },
@@ -2271,8 +2267,8 @@
       "resolved": "https://registry.npmjs.org/drivelist/-/drivelist-6.4.0.tgz",
       "dependencies": {
         "nan": {
-          "version": "2.10.0",
-          "resolved": "https://registry.npmjs.org/nan/-/nan-2.10.0.tgz"
+          "version": "2.11.0",
+          "resolved": "https://registry.npmjs.org/nan/-/nan-2.11.0.tgz"
         }
       }
     },
@@ -2929,8 +2925,9 @@
       "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.2.tgz"
     },
     "etcher-sdk": {
-      "version": "0.1.4",
-      "resolved": "git://github.com/resin-io-modules/etcher-sdk.git#42d82cd89213f9d4a2c74638933222e3eb4f359f",
+      "version": "0.1.7",
+      "from": "resin-io-modules/etcher-sdk#v0.1.7",
+      "resolved": "git://github.com/resin-io-modules/etcher-sdk.git#df031b690a47e60363453924f001d96d972e5591",
       "dependencies": {
         "@types/node": {
           "version": "6.0.116",
@@ -3433,8 +3430,8 @@
       "resolved": "https://registry.npmjs.org/github-from-package/-/github-from-package-0.0.0.tgz"
     },
     "glob": {
-      "version": "7.1.2",
-      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.2.tgz"
+      "version": "7.1.3",
+      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.3.tgz"
     },
     "glob-base": {
       "version": "0.3.0",
@@ -3804,8 +3801,8 @@
       }
     },
     "iconv-lite": {
-      "version": "0.4.23",
-      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.23.tgz"
+      "version": "0.4.24",
+      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz"
     },
     "ieee754": {
       "version": "1.1.8",
@@ -5201,6 +5198,11 @@
           "resolved": "https://registry.npmjs.org/commander/-/commander-2.11.0.tgz",
           "dev": true
         },
+        "glob": {
+          "version": "7.1.2",
+          "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.2.tgz",
+          "dev": true
+        },
         "has-flag": {
           "version": "2.0.0",
           "resolved": "https://registry.npmjs.org/has-flag/-/has-flag-2.0.0.tgz",
@@ -6215,7 +6217,14 @@
     "raw-body": {
       "version": "2.3.3",
       "resolved": "https://registry.npmjs.org/raw-body/-/raw-body-2.3.3.tgz",
-      "dev": true
+      "dev": true,
+      "dependencies": {
+        "iconv-lite": {
+          "version": "0.4.23",
+          "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.23.tgz",
+          "dev": true
+        }
+      }
     },
     "rc": {
       "version": "1.2.8",
@@ -6630,12 +6639,8 @@
           "resolved": "https://registry.npmjs.org/cli-width/-/cli-width-1.1.1.tgz"
         },
         "color-convert": {
-          "version": "1.9.2",
-          "resolved": "https://registry.npmjs.org/color-convert/-/color-convert-1.9.2.tgz"
-        },
-        "color-name": {
-          "version": "1.1.1",
-          "resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.1.tgz"
+          "version": "1.9.3",
+          "resolved": "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz"
         },
         "figures": {
           "version": "1.7.0",
@@ -7896,6 +7901,7 @@
     },
     "unbzip2-stream": {
       "version": "1.2.5",
+      "from": "resin-io-modules/unbzip2-stream#942fc218013c14adab01cf693b0500cf6ac83193",
       "resolved": "git://github.com/resin-io-modules/unbzip2-stream.git#942fc218013c14adab01cf693b0500cf6ac83193"
     },
     "unc-path-regex": {
