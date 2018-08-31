@@ -10,10 +10,6 @@
       "version": "1.6.50",
       "resolved": "https://registry.npmjs.org/@types/angular/-/angular-1.6.50.tgz"
     },
-    "@types/bluebird": {
-      "version": "3.5.24",
-      "resolved": "https://registry.npmjs.org/@types/bluebird/-/bluebird-3.5.24.tgz"
-    },
     "@types/chart.js": {
       "version": "2.7.31",
       "resolved": "https://registry.npmjs.org/@types/chart.js/-/chart.js-2.7.31.tgz"
@@ -29,18 +25,6 @@
     "@types/color-name": {
       "version": "1.1.0",
       "resolved": "https://registry.npmjs.org/@types/color-name/-/color-name-1.1.0.tgz"
-    },
-    "@types/debug": {
-      "version": "0.0.30",
-      "resolved": "https://registry.npmjs.org/@types/debug/-/debug-0.0.30.tgz"
-    },
-    "@types/events": {
-      "version": "1.2.0",
-      "resolved": "https://registry.npmjs.org/@types/events/-/events-1.2.0.tgz"
-    },
-    "@types/file-type": {
-      "version": "5.2.1",
-      "resolved": "https://registry.npmjs.org/@types/file-type/-/file-type-5.2.1.tgz"
     },
     "@types/grid-styled": {
       "version": "3.2.2",
@@ -63,8 +47,8 @@
       "resolved": "https://registry.npmjs.org/@types/lodash.memoize/-/lodash.memoize-4.1.4.tgz"
     },
     "@types/node": {
-      "version": "10.9.3",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.9.3.tgz"
+      "version": "10.9.4",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.9.4.tgz"
     },
     "@types/prop-types": {
       "version": "15.5.5",
@@ -101,10 +85,6 @@
     "@types/uuid": {
       "version": "3.4.4",
       "resolved": "https://registry.npmjs.org/@types/uuid/-/uuid-3.4.4.tgz"
-    },
-    "@types/yauzl": {
-      "version": "2.9.0",
-      "resolved": "https://registry.npmjs.org/@types/yauzl/-/yauzl-2.9.0.tgz"
     },
     "7zip-bin": {
       "version": "2.4.1",
@@ -640,8 +620,8 @@
       "dev": true
     },
     "aws-sdk": {
-      "version": "2.305.0",
-      "resolved": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.305.0.tgz",
+      "version": "2.306.0",
+      "resolved": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.306.0.tgz",
       "dependencies": {
         "uuid": {
           "version": "3.1.0",
@@ -1905,8 +1885,8 @@
       "dev": true,
       "dependencies": {
         "buffer": {
-          "version": "5.2.0",
-          "resolved": "https://registry.npmjs.org/buffer/-/buffer-5.2.0.tgz",
+          "version": "5.2.1",
+          "resolved": "https://registry.npmjs.org/buffer/-/buffer-5.2.1.tgz",
           "dev": true
         }
       }
@@ -2297,8 +2277,8 @@
       "dev": true,
       "dependencies": {
         "@types/node": {
-          "version": "7.0.69",
-          "resolved": "https://registry.npmjs.org/@types/node/-/node-7.0.69.tgz",
+          "version": "7.0.70",
+          "resolved": "https://registry.npmjs.org/@types/node/-/node-7.0.70.tgz",
           "dev": true
         }
       }
@@ -2925,13 +2905,12 @@
       "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.2.tgz"
     },
     "etcher-sdk": {
-      "version": "0.1.7",
-      "from": "resin-io-modules/etcher-sdk#v0.1.7",
-      "resolved": "git://github.com/resin-io-modules/etcher-sdk.git#df031b690a47e60363453924f001d96d972e5591",
+      "version": "0.1.9",
+      "resolved": "https://registry.npmjs.org/etcher-sdk/-/etcher-sdk-0.1.9.tgz",
       "dependencies": {
         "@types/node": {
-          "version": "6.0.116",
-          "resolved": "https://registry.npmjs.org/@types/node/-/node-6.0.116.tgz"
+          "version": "6.0.117",
+          "resolved": "https://registry.npmjs.org/@types/node/-/node-6.0.117.tgz"
         },
         "bluebird": {
           "version": "3.5.1",
@@ -5443,8 +5422,8 @@
       "resolved": "https://registry.npmjs.org/node-raspberrypi-usbboot/-/node-raspberrypi-usbboot-0.0.7.tgz",
       "dependencies": {
         "@types/node": {
-          "version": "6.0.116",
-          "resolved": "https://registry.npmjs.org/@types/node/-/node-6.0.116.tgz"
+          "version": "6.0.117",
+          "resolved": "https://registry.npmjs.org/@types/node/-/node-6.0.117.tgz"
         }
       }
     },
@@ -7420,8 +7399,8 @@
       "resolved": "https://registry.npmjs.org/styled-components/-/styled-components-3.2.3.tgz",
       "dependencies": {
         "buffer": {
-          "version": "5.2.0",
-          "resolved": "https://registry.npmjs.org/buffer/-/buffer-5.2.0.tgz"
+          "version": "5.2.1",
+          "resolved": "https://registry.npmjs.org/buffer/-/buffer-5.2.1.tgz"
         },
         "supports-color": {
           "version": "3.2.3",
@@ -7826,10 +7805,6 @@
       "version": "0.0.6",
       "resolved": "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz",
       "dev": true
-    },
-    "typescript": {
-      "version": "2.9.2",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-2.9.2.tgz"
     },
     "ua-parser-js": {
       "version": "0.7.18",
