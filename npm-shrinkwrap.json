@@ -2905,8 +2905,8 @@
       "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.2.tgz"
     },
     "etcher-sdk": {
-      "version": "0.1.15",
-      "resolved": "https://registry.npmjs.org/etcher-sdk/-/etcher-sdk-0.1.15.tgz",
+      "version": "0.1.16",
+      "resolved": "https://registry.npmjs.org/etcher-sdk/-/etcher-sdk-0.1.16.tgz",
       "dependencies": {
         "@types/node": {
           "version": "6.0.117",
@@ -2917,8 +2917,8 @@
           "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.5.2.tgz"
         },
         "drivelist": {
-          "version": "6.4.2",
-          "resolved": "https://registry.npmjs.org/drivelist/-/drivelist-6.4.2.tgz"
+          "version": "6.4.3",
+          "resolved": "https://registry.npmjs.org/drivelist/-/drivelist-6.4.3.tgz"
         },
         "nan": {
           "version": "2.11.0",
