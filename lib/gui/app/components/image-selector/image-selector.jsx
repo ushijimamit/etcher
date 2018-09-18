@@ -19,17 +19,14 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 const propTypes = require('prop-types')
-const Color = require('color')
 
 const middleEllipsis = require('./../../utils/middle-ellipsis')
 
-const styled = require('styled-components').default
 const { Provider, Button } = require('rendition')
 
 const shared = require('/./../../../../../lib/shared/units')
-const { colors, consts } = require('./../../theme')
 const { StepButton, StepNameButton, StepSelection,
-  Footer, FooterUnderline, SizeText } = require('./../../styled-components')
+  Footer, Underline, SizeText, ChangeButton } = require('./../../styled-components')
 
 class SelectImageButton extends React.Component {
 
@@ -67,12 +64,12 @@ class SelectImageButton extends React.Component {
             { this.props.flashing ?
               null
               :
-              <Button className={'button button-link step-footer'}
+              <ChangeButton
                 plaintext
                 onClick={() => this.props.reselectImage()}
               >
                 Change
-              </Button>
+              </ChangeButton>
             }
           </StepSelection>
         </Provider>
@@ -90,11 +87,11 @@ class SelectImageButton extends React.Component {
             </StepButton>
             <Footer>
               { ::this.props.mainSupportedExtensions.join(', ') }, and
-              <FooterUnderline
+              <Underline
                 tooltip={ ::this.props.extraSupportedExtensions.join(', ') }
               >
                 {' '}others
-              </FooterUnderline>
+              </Underline>
             </Footer>
           </StepSelection>
         </Provider>
