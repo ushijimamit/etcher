@@ -26,7 +26,7 @@ const { Provider, Button } = require('rendition')
 
 const shared = require('/./../../../../../lib/shared/units')
 const { StepButton, StepNameButton, StepSelection,
-  Footer, Underline, SizeText, ChangeButton } = require('./../../styled-components')
+  Footer, Underline, DetailsText, ChangeButton } = require('./../../styled-components')
 
 const SelectImageButton = props => {
 
@@ -36,20 +36,20 @@ const SelectImageButton = props => {
         <StepSelection>
           <StepNameButton
             plaintext
-            onClick={() => props.showSelectedImageDetails()}
+            onClick={props.showSelectedImageDetails}
             tooltip={props.imageBasename}
           >
             ( {middleEllipsis(props.imageName || props.imageBasename , 20)} )
           </StepNameButton>
-          <SizeText>
+          <DetailsText>
             {shared.bytesToClosestUnit(props.imageSize)}
-          </SizeText>
+          </DetailsText>
           { props.flashing ?
             null
             :
             <ChangeButton
               plaintext
-              onClick={() => props.reselectImage()}
+              onClick={props.reselectImage}
             >
               Change
             </ChangeButton>
@@ -64,7 +64,7 @@ const SelectImageButton = props => {
         <StepSelection>
           <StepButton
             primary
-            onClick={() => props.openImageSelector()}
+            onClick={props.openImageSelector}
           >
             Select image
           </StepButton>
