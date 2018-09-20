@@ -22,63 +22,74 @@ const propTypes = require('prop-types')
 
 const middleEllipsis = require('./../../utils/middle-ellipsis')
 
-const { Provider, Button } = require('rendition')
+const { Provider, Button, Modal, Txt } = require('rendition')
 
 const shared = require('/./../../../../../lib/shared/units')
 const { StepButton, StepNameButton, StepSelection,
   Footer, Underline, SizeText, ChangeButton } = require('./../../styled-components')
 
-const SelectImageButton = props => {
+class SelectImageButton extends React.Component {
 
-  if (props.hasImage){
-    return (
-      <Provider>
-        <StepSelection>
-          <StepNameButton
-            plaintext
-            onClick={() => props.showSelectedImageDetails()}
-            tooltip={props.imageBasename}
-          >
-            ( {middleEllipsis(props.imageName || props.imageBasename , 20)} )
-          </StepNameButton>
-          <SizeText>
-            {shared.bytesToClosestUnit(props.imageSize)}
-          </SizeText>
-          { props.flashing ?
-            null
-            :
-            <ChangeButton
-              plaintext
-              onClick={() => props.reselectImage()}
-            >
-              Change
-            </ChangeButton>
-          }
-        </StepSelection>
-      </Provider>
-    )
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      show: false
+    }
   }
-  else {
-    return (
-      <Provider>
-        <StepSelection>
-          <StepButton
-            primary
-            onClick={() => props.openImageSelector()}
-          >
-            Select image
-          </StepButton>
-          <Footer>
-            { props.mainSupportedExtensions.join(', ') }, and
-            <Underline
-              tooltip={ props.extraSupportedExtensions.join(', ') }
+
+  render() {
+    if (this.props.hasImage){
+      return (
+        <Provider>
+          <StepSelection>
+            <StepNameButton
+              plaintext
+              onClick={() => this.props.showSelectedImageDetails()}
+              tooltip={this.props.imageBasename}
             >
-              {' '}others
-            </Underline>
-          </Footer>
-        </StepSelection>
-      </Provider>
-    )
+              ( {middleEllipsis(this.props.imageName || this.props.imageBasename , 20)} )
+              <Txt onClick={this.props.showSelectedImageDetails}> Show original modal </Txt>
+            </StepNameButton>
+            <SizeText>
+              {shared.bytesToClosestUnit(this.props.imageSize)}
+            </SizeText>
+            { this.props.flashing ?
+              null
+              :
+              <ChangeButton
+                plaintext
+                onClick={() => this.props.reselectImage()}
+              >
+                Change
+              </ChangeButton>
+            }
+          </StepSelection>
+        </Provider>
+      )
+    }
+    else {
+      return (
+        <Provider>
+          <StepSelection>
+            <StepButton
+              primary
+              onClick={() => this.props.openImageSelector()}
+            >
+              Select image
+            </StepButton>
+            <Footer>
+              { this.props.mainSupportedExtensions.join(', ') }, and
+              <Underline
+                tooltip={ this.props.extraSupportedExtensions.join(', ') }
+              >
+                {' '}others
+              </Underline>
+            </Footer>
+          </StepSelection>
+        </Provider>
+      )
+    }
   }
 }
 
