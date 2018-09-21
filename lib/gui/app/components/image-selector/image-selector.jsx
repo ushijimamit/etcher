@@ -28,7 +28,7 @@ const shared = require('/./../../../../../lib/shared/units')
 const { StepButton, StepNameButton, StepSelection,
   Footer, Underline, DetailsText, ChangeButton } = require('./../../styled-components')
 
-const DetailsModal = require('./../DetailsModal/DetailsModal')
+const DetailsModal = require('./../details-modal/details-modal')
 
 class SelectImageButton extends React.Component {
 
