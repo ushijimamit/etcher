@@ -28,6 +28,8 @@ const shared = require('/./../../../../../lib/shared/units')
 const { StepButton, StepNameButton, StepSelection,
   Footer, Underline, DetailsText, ChangeButton } = require('./../../styled-components')
 
+const DetailsModal = require('./../DetailsModal/DetailsModal')
+
 class SelectImageButton extends React.Component {
 
   constructor(props) {
@@ -45,26 +47,33 @@ class SelectImageButton extends React.Component {
           <StepSelection>
             <StepNameButton
               plaintext
-              onClick={this.props.showSelectedImageDetails()}
+              onClick={() => this.setState({ show: true })}
               tooltip={this.props.imageBasename}
             >
               ( {middleEllipsis(this.props.imageName || this.props.imageBasename , 20)} )
-              <Txt onClick={this.props.showSelectedImageDetails}> Show original modal </Txt>
             </StepNameButton>
-            <SizeText>
+            <DetailsText>
               {shared.bytesToClosestUnit(this.props.imageSize)}
-            </SizeText>
+            </DetailsText>
             { this.props.flashing ?
               null
               :
               <ChangeButton
                 plaintext
-                onClick={this.props.reselectImage()}
+                onClick={this.props.reselectImage}
               >
                 Change
               </ChangeButton>
             }
           </StepSelection>
+          {this.state.show ?
+            <DetailsModal
+              title={'Image File Name'}
+              details={this.props.imagePath}
+              callback={() => this.setState({ show: false })}
+            />
+          : null
+          }
         </Provider>
       )
     }
@@ -74,7 +83,7 @@ class SelectImageButton extends React.Component {
           <StepSelection>
             <StepButton
               primary
-              onClick={this.props.openImageSelector()}
+              onClick={this.props.openImageSelector}
             >
               Select image
             </StepButton>
@@ -98,12 +107,12 @@ SelectImageButton.propTypes = {
   mainSupportedExtensions: propTypes.array,
   extraSupportedExtensions: propTypes.array,
   hasImage: propTypes.bool,
-  showSelectedImageDetails: propTypes.func,
   imageName: propTypes.string,
   imageBasename: propTypes.string,
   reselectImage: propTypes.func,
   flashing: propTypes.bool,
   imageSize: propTypes.number,
+  imagePath: propTypes.string
 }
 
 module.exports = SelectImageButton
