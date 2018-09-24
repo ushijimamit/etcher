@@ -2905,8 +2905,8 @@
       "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.2.tgz"
     },
     "etcher-sdk": {
-      "version": "0.1.16",
-      "resolved": "https://registry.npmjs.org/etcher-sdk/-/etcher-sdk-0.1.16.tgz",
+      "version": "0.1.23",
+      "resolved": "https://registry.npmjs.org/etcher-sdk/-/etcher-sdk-0.1.23.tgz",
       "dependencies": {
         "@types/node": {
           "version": "6.0.117",
@@ -2923,6 +2923,10 @@
         "nan": {
           "version": "2.11.0",
           "resolved": "https://registry.npmjs.org/nan/-/nan-2.11.0.tgz"
+        },
+        "udif": {
+          "version": "0.15.7",
+          "resolved": "https://registry.npmjs.org/udif/-/udif-0.15.7.tgz"
         }
       }
     },
@@ -7809,10 +7813,6 @@
     "ua-parser-js": {
       "version": "0.7.18",
       "resolved": "https://registry.npmjs.org/ua-parser-js/-/ua-parser-js-0.7.18.tgz"
-    },
-    "udif": {
-      "version": "0.15.6",
-      "resolved": "https://registry.npmjs.org/udif/-/udif-0.15.6.tgz"
     },
     "uglify-js": {
       "version": "3.4.8",
