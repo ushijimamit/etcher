@@ -28,17 +28,13 @@ const shared = require('/./../../../../../lib/shared/units')
 const { colors } = require('./../../theme')
 
 const ModalHeader = styled(Flex) `
-  text-align: left;
+  justify-content: space-between;
   align-items: baseline;
   font-size: 12px;
   color: ${colors.light.soft.foreground};
   font-weight: bold;
   padding: 11px 20px;
   border-bottom: 1.5px solid ${colors.light.soft.background};
-`
-
-const ModalTitle = styled(Txt) `
-  flex-grow: 1;
 `
 
 const ModalBody = styled(Box) `
@@ -71,11 +67,10 @@ const DetailsModal = props => {
         titleElement={
           <React.Fragment>
             <ModalHeader>
-              <ModalTitle>{props.title}</ModalTitle>
+              <Txt>{props.title}</Txt>
               <CloseButton
                 plaintext
                 onClick={props.callback}
-                align='left'
               >
               &times;
               </CloseButton>
