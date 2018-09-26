@@ -41,6 +41,7 @@ class SelectImageButton extends React.Component {
   }
 
   render() {
+    let imageSize = shared.bytesToClosestUnit(this.props.imageSize)
     if (this.props.hasImage){
       return (
         <Provider>
@@ -50,7 +51,7 @@ class SelectImageButton extends React.Component {
               onClick={() => this.setState({ show: true })}
               tooltip={this.props.imageBasename}
             >
-              ( {middleEllipsis(this.props.imageName || this.props.imageBasename , 20)} )
+              {middleEllipsis(this.props.imageName || this.props.imageBasename , 20)}
             </StepNameButton>
             <DetailsText>
               {shared.bytesToClosestUnit(this.props.imageSize)}
@@ -68,8 +69,14 @@ class SelectImageButton extends React.Component {
           </StepSelection>
           {this.state.show ?
             <DetailsModal
-              title={'Image File Name'}
-              details={this.props.imagePath}
+              title={'IMAGE DETAILS'}
+              details={
+                {
+                  path: this.props.imagePath,
+                  name: this.props.imageName || this.props.imageBasename,
+                  size: imageSize
+                }
+              }
               callback={() => this.setState({ show: false })}
             />
           : null
@@ -88,11 +95,11 @@ class SelectImageButton extends React.Component {
               Select image
             </StepButton>
             <Footer>
-              { this.props.mainSupportedExtensions.join(', ') }, and
+              { this.props.mainSupportedExtensions.join(', ') }, and {' '}
               <Underline
                 tooltip={ this.props.extraSupportedExtensions.join(', ') }
               >
-                {' '}others
+                others
               </Underline>
             </Footer>
           </StepSelection>

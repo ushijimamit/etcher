@@ -32,6 +32,7 @@ const ModalHeader = styled(Flex) `
   align-items: baseline;
   font-size: 12px;
   color: ${colors.light.soft.foreground};
+  font-weight: bold;
   padding: 11px 20px;
   border-bottom: 1.5px solid ${colors.light.soft.background};
 `
@@ -44,9 +45,7 @@ const ModalBody = styled(Box) `
   padding: 20px;
   max-height: 250px;
   word-wrap: break-word;
-
-  color: ${colors.light.foreground};
-  background-color: ${colors.light.soft.background};
+  text-align: left;
 
   margin: -35px 15px -35px 15px;
 `
@@ -67,6 +66,7 @@ const DetailsModal = props => {
   return (
     <Provider>
       <Modal
+        w='400px'
         style={{padding: 0}}
         titleElement={
           <React.Fragment>
@@ -83,9 +83,6 @@ const DetailsModal = props => {
           </React.Fragment>
         }
         primaryButtonProps={{
-						position: 'absolute',
-            top: 0,
-            right: 0,
             plaintext: true,
             primary: false
 				}}
@@ -93,7 +90,8 @@ const DetailsModal = props => {
         done={props.callback}
       >
           <ModalBody>
-            <Txt> {props.details} </Txt>
+            <Txt bold color={colors.light.foreground}> {props.details.name} - {props.details.size} </Txt>
+            <Txt bold color={colors.default.foreground}> {props.details.path} </Txt>
           </ModalBody>
       </Modal>
     </Provider>
@@ -102,7 +100,7 @@ const DetailsModal = props => {
 
 DetailsModal.propTypes = {
   title: propTypes.string,
-  details: propTypes.string,
+  details: propTypes.object,
   callback: propTypes.func
 }
 
